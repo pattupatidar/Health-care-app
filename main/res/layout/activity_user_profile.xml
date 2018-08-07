@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.trendzmag.firebaseauth2.userProfile.UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@android:drawable/ic_menu_report_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_width="345dp"
+            android:background="@drawable/edittextstyle"
+            android:drawablePadding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="USERNAME"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:id="@+id/usernameEditText"
+            android:inputType="text"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="345dp"
+            android:background="@drawable/edittextstyle"
+            android:drawablePadding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="STATUS"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:id="@+id/statusEditText"
+            android:inputType="text"/>
+
+        <Button
+            android:padding="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/buttonstylepink"
+            android:id="@+id/saveUserButton" />
+    </LinearLayout>
+</LinearLayout>

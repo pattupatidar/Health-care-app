@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.adity.healthcareapp.ProfileActivity"
+    android:padding="0dp">
+
+    <TextView
+        android:text="Tap on the icon to select image."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_centerVertical="true"
+            android:layout_height="200dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:id="@+id/imageView" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/progressBar"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="28dp"
+        android:id="@+id/editText"
+        android:hint="Enter the display name."
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verified"
+        android:gravity="center"
+        android:id="@+id/verifyTextView"
+        />
+
+    <Button
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:background="@drawable/buttonstylepink"
+        android:drawableLeft="@drawable/ic_unarchive_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+</LinearLayout>

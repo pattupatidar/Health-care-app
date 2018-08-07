@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.trendzmag.firebaseauth2.SignUp"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="User Registration"
+            android:textColor="#fff"
+            android:textSize="50sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:layout_width="345dp"
+            android:background="@drawable/edittextstyle"
+            android:drawablePadding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="E_MAIL"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:id="@+id/emailEditText"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="345dp"
+            android:background="@drawable/edittextstyle"
+            android:drawablePadding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:id="@+id/passwordEditText"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:padding="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/buttonstylepink"
+            android:id="@+id/registerButton" />
+    </LinearLayout>
+
+</LinearLayout>
